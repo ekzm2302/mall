@@ -78,7 +78,7 @@
 					</div>
 				</div>				
 				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
+					<div class="bottom col-sm-offset-2 col-sm-10" style="margin-top: 15px;margin-bottom: 15px;text-align: center;">
 						<button type="submit" class="btn btn-primary mt-2 mb-2">회원 가입</button>
 						<button type="submit" class="btn btn-danger mt-2 mb-2">취소</button>
 					</div>

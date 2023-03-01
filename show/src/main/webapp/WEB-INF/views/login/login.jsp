@@ -46,8 +46,11 @@
 										type="checkbox" checked> <span class="checkmark"></span>
 									</label>
 								</div>
-								<div class="w-50 text-md-right">
+								<div class="w-50 text-md-right" style="margin-left: 120px;">
 									<a href="#">패스워드 찾기</a>
+								</div>
+								<div class="w-50 text-md-right" style="margin-left: 30px;">
+									<a href="#">회원가입</a>
 								</div>
 							</div>
 							<div class="form-group mt-4">

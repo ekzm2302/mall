@@ -14,7 +14,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">전체</a></li>
+                                <li><a class="dropdown-item" href="list">전체</a></li>
                                 <li><hr class="dropdown-divider" /></li>
                                 <li><a class="dropdown-item" href="#!">신상</a></li>
                                 <li><a class="dropdown-item" href="#!">악세사리</a></li>
@@ -28,8 +28,8 @@
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
                     </form>
-                     <a class="nav-link nav-item" href="login.sh">로그인</a>
-                     <a class="nav-link nav-item" href="insert.sh">회원가입</a>
+                     <a class="nav-link nav-item" href="login">로그인</a>
+                     <a class="nav-link nav-item" href="insert">회원가입</a>
                 </div>
             </div>
         </nav>

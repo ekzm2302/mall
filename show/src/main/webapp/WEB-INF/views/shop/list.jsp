@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+<head> 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -16,6 +16,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+         <link href="css/common.css" rel="stylesheet" />
     </head>
 <body>
  <!-- Navigation-->
@@ -31,34 +32,13 @@
         </header>
         <!-- Section-->
         <section class="py-5">
-       <h3 class="text-center mb-4">공지사항</h3>
-       <div class="table-responsive container-md">
-			<table class='table table-hover'>
-			<colgroup>
-				<col width='80px'>
-				<col class="no_title" >
-				<col width="250px">
-				<col width='120px'>
-				<col width='120px'>
-			</colgroup>
-			<tr class='text-center list_top'> 
-				<th>번호</th>
-				<th>제목</th>
-				<th>작성자</th>
-				<th>날짜</th>
-				<th>조회수</th>
-			</tr>
-				<tr class='text-center '>
-					<td class='text-center'> 1</td>
-					<td class="no_title text-start"><a href="#">오픈기념 파격 세일 !</a></td>
-					<td >그림자</td> 
-					<td>2022.02.23</td>
-					<td>2</td>
-				</tr>
-		</table>
-					</div>
-
-        
+	         <div style="text-align: right; margin-right: 350px;">
+	    <select name="sort" id="sort">
+	      <option value="recently" id="recently">전체</option>
+	      <option value="likes" id="likes">인기순</option>
+	      <option value="comments" id="comments">가격높음</option>
+	    </select>
+	  </div>
             <div class="container px-4 px-lg-5 mt-5 ">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
@@ -257,9 +237,10 @@
                             </div>
                         </div>
                     </div>
+                       <jsp:include page="/WEB-INF/views/include/page.jsp" />
                 </div>
+               
             </div>
-            
         </section>
         <!-- Footer-->
        <jsp:include page="/WEB-INF/views/include/footer.jsp" />
