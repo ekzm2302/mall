@@ -21,15 +21,6 @@
 <body>
  <!-- Navigation-->
       <jsp:include page="/WEB-INF/views/include/topnav.jsp" />
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">CJ Shop</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">예쁜옷 예쁜신상 많은 집</p>
-                </div>
-            </div>
-        </header>
         <!-- Section-->
         <section class="py-5">
 	         <div style="text-align: right; margin-right: 350px;">
@@ -39,7 +30,14 @@
 	      <option value="comments" id="comments">가격높음</option>
 	    </select>
 	  </div>
-            <div class="container px-4 px-lg-5 mt-5 ">
+	  <div style=" display: flex; justify-content: center;">
+	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">전체</button>
+	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">상의</button>
+	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">하의</button>
+	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">악세사리</button>
+	  </div>
+	  
+            <div class="container px-4 px-lg-5 mt-4 ">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
                         <div class="card h-100 ">
@@ -237,9 +235,10 @@
                             </div>
                         </div>
                     </div>
+                 
                        <jsp:include page="/WEB-INF/views/include/page.jsp" />
                 </div>
-               
+              
             </div>
         </section>
         <!-- Footer-->

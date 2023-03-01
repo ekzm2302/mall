@@ -19,6 +19,7 @@
 	rel="stylesheet" />
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="css/styles.css" rel="stylesheet" />
+ <script src="https://code.jquery.com/jquery-3.6.3.min.js" ></script> 
 </head>
 <body>
 	<!-- Navigation-->
@@ -26,15 +27,15 @@
 
 	<section class="ftco-section">
 		<div class="container">
-			
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-5">
 					<div class="login-wrap p-4 p-md-5">
-							<h2 style="margin-top: 70px;">로그인</h2>
+					<a href="<c:url value='/'/>"><img  style="width: 55%; margin-left: 20%;margin-bottom: -20px;" alt="..." src="img/logo2.png"></a>
+							<h2 >로그인</h2>
 						<form action="" class="login-form">
 							<div class="form-group">
 								<input type="text" class="form-control rounded-left " id="id"
-									placeholder="ID" required>
+						 			placeholder="ID" required>
 							</div>
 							<div class="form-group d-flex">
 								<input type="password" class="form-control rounded-left mt-2" id="pw"
@@ -59,7 +60,7 @@
 							</div>
 						</form>
 					</div>
-
+   
 				</div>
 			</div>
 		</div>
@@ -68,9 +69,43 @@
 	<!-- Footer-->
 	<jsp:include page="/WEB-INF/views/include/footer.jsp" />
 	<!-- Bootstrap core JS-->
+	 <script>
+$('#pw').keydown(function(e){
+	if(e.keyCode == 13) {
+	login();
+	}
+}) ;
+ 
+ $('.login').click(function(){
+		login();
+	});
+ function login(){
+	
+	if( emptyCheck() ){
+		
+		$.ajax({
+			url: 'scott',
+			data: { id:$('#id').val(), pw:$('#pw').val() },
+			dataType : "json", 
+			success: function( response ){
+				
+				if( response ){
+					location = '<c:url value="/"/>';
+				}else{
+					alert('아이디나 비밀번호가 일치하지 않습니다');
+				}
+			},error: function(req,text){
+				alert(text+':'+req.status);
+			}
+		});
+	}
+}
+</script>
+	
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
-	<script src="js/scripts.js"></script>
+	<script src="js/common.js"></script>
+	
 </body>
 </html>

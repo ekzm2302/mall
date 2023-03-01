@@ -20,45 +20,9 @@
 <body>
  <!-- Navigation-->
       <jsp:include page="/WEB-INF/views/include/topnav.jsp" />
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">CJ Shop</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">예쁜옷 예쁜신상 많은 집</p>
-                </div>
-            </div>
-        </header>
         <!-- Section-->
         <section class="py-5">
-       <h3 class="text-center mb-4">공지사항</h3>
-       <div class="table-responsive container-md">
-			<table class='table table-hover'>
-			<colgroup>
-				<col width='80px'>
-				<col class="no_title" >
-				<col width="250px">
-				<col width='120px'>
-				<col width='120px'>
-			</colgroup>
-			<tr class='text-center list_top'> 
-				<th>번호</th>
-				<th>제목</th>
-				<th>작성자</th>
-				<th>날짜</th>
-				<th>조회수</th>
-			</tr>
-				<tr class='text-center '>
-					<td class='text-center'> 1</td>
-					<td class="no_title text-start"><a href="#">오픈기념 파격 세일 !</a></td>
-					<td >그림자</td> 
-					<td>2022.02.23</td>
-					<td>2</td>
-				</tr>
-		</table>
-					</div>
-
-        
+        <h2 class="text-center">&#127775; <span>New Item</span></h2>
             <div class="container px-4 px-lg-5 mt-5 ">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
@@ -259,7 +223,7 @@
                     </div>
                 </div>
             </div>
-            
+  
         </section>
         <!-- Footer-->
        <jsp:include page="/WEB-INF/views/include/footer.jsp" />
