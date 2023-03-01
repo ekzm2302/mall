@@ -9,8 +9,4 @@ from member
 where USERID = #{id} and USERPW = #{pw}
 </select>
 
-<select id ='test' resultType="String">
-select 1 from dual
-</select>
-
 </mapper>

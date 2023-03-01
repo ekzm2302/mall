@@ -23,6 +23,12 @@
         <!-- Section-->
         <section class="py-5">
         <h2 class="text-center">&#127775; <span>New Item</span></h2>
+         <div class="mt-4" style=" display: flex; margin-bottom: -1rem; justify-content: center;">
+	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">전체</button>
+	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">상의</button>
+	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">하의</button>
+	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">악세사리</button>
+	  </div>
             <div class="container px-4 px-lg-5 mt-5 ">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">

@@ -29,7 +29,7 @@
 	      <option value="likes" id="likes">인기순</option>
 	      <option value="comments" id="comments">가격높음</option>
 	    </select>
-	  </div>
+	    </div>
 	  <div style=" display: flex; justify-content: center;">
 	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">전체</button>
 	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">상의</button>

@@ -39,8 +39,16 @@ a:hover {
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
                     </form>
+                    <!-- 로그인하지 않은 경우 -->
+                    <c:if test="${empty loginInfo}">
                      <a class="nav-link nav-item" href="login">로그인</a>
                      <a class="nav-link nav-item" href="insert">회원가입</a>
+                    </c:if>
+                    <!-- 로그인한 경우 -->
+                    <c:if test="${not empty loginInfo}">
+                    <a class="nav-link nav-item" ><strong>${loginInfo.username} 님</strong></a>
+                    <a class="nav-link nav-item" href="logout">로그아웃</a>
+                    </c:if>
                 </div>
             </div>
         </nav>

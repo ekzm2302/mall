@@ -14,7 +14,18 @@ import member.MemberVO;
 
 @Controller
 public class LoginController {
-	@Autowired private SqlSession sql;
+	@Autowired
+	private SqlSession sql;
+
+	// 로그아웃
+	@RequestMapping("/logout")
+	public String logout(HttpSession session) {
+		// 비지니스로직: 세션에 있는 로그인정보를 삭제한다
+		session.removeAttribute("loginInfo");
+		// 응답화면연결
+		return "redirect:/";
+	}
+
 	// 로그인처리 요청
 	@ResponseBody
 	@RequestMapping("/shlogin")
@@ -27,13 +38,7 @@ public class LoginController {
 
 		return vo == null ? false : true;
 	}
-	// 로그인 화면요청
-	@ResponseBody
-	@RequestMapping("/test")
-	public String test(HttpSession session) {
-		
-		return  sql.selectOne("lo.test");
-	}
+
 	// 로그인 화면요청
 	@RequestMapping("/login")
 	public String login(HttpSession session) {
