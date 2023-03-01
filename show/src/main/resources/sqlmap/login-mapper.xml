@@ -4,10 +4,13 @@
 
 <!-- 로그인조회 -->
 <select id='login' resultType='member.MemberVO'>
-select userid, userpw
-from tbl
-where e.emp_no = #{id} and emp_pw = #{pw}
+select *
+from member
+where USERID = #{id} and USERPW = #{pw}
 </select>
 
+<select id ='test' resultType="String">
+select 1 from dual
+</select>
 
 </mapper>

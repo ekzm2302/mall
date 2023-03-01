@@ -27,7 +27,13 @@ public class LoginController {
 
 		return vo == null ? false : true;
 	}
-
+	// 로그인 화면요청
+	@ResponseBody
+	@RequestMapping("/test")
+	public String test(HttpSession session) {
+		
+		return  sql.selectOne("lo.test");
+	}
 	// 로그인 화면요청
 	@RequestMapping("/login")
 	public String login(HttpSession session) {

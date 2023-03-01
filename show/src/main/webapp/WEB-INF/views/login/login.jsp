@@ -84,7 +84,7 @@ $('#pw').keydown(function(e){
 	if( emptyCheck() ){
 		
 		$.ajax({
-			url: 'scott',
+			url: 'shlogin',
 			data: { id:$('#id').val(), pw:$('#pw').val() },
 			dataType : "json", 
 			success: function( response ){
