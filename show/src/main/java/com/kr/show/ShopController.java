@@ -14,4 +14,11 @@ public class ShopController {
 		session.setAttribute("category", "list");
 		return "shop/list";
 	}
+	
+	// 지도
+	@RequestMapping("/map.mp")
+	public String Map(HttpSession session) {
+		session.setAttribute("category", "map");
+		return "shop/map";
+	}
 }

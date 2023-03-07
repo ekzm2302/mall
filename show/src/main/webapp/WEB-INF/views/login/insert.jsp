@@ -21,17 +21,17 @@
  <!-- Navigation-->
       <jsp:include page="/WEB-INF/views/include/topnav.jsp" />
      	
-     	<div class="container">
+     		<div class="container">
 		<div class="row mt-3">
 			<h1 class="bg-dark py-5" style="color: white;">회원 가입</h1>
 		</div>
 		<div class="row">
-			<form class="form-horizontal" action="/login/insert" method="post">
+			<form class="form-horizontal" action="/show/insert" method="post">
 				<div class="form-group">
 					<label for="inputId" class="col-sm-2 control-label">아이디</label>
 					<div class="col-sm-10">
 						<input class="form-control" id="inputId" placeholder="ID" name="userid">
-						<button class="btn btn-primary btn-sm mt-2">ID 중복체크</button>
+						<button class="btn btn-primary btn-sm mt-2" id='btn-userid'>ID 중복체크</button>
 						<span></span>
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 					</div>
 				</div>				
 				<div class="form-group">
-					<label for="inputName" class="col-sm-2 control-label">이름</label>
+					<label for="inputName" class="col-sm-2 control-label"  autofocus>이름</label>
 					<div class="col-sm-10">
 						<input class="form-control" id="inputName" placeholder="이름" name="username">
 					</div>
@@ -56,7 +56,7 @@
 				<div class="form-group">
 					<label for="inputAdd" class="col-sm-2 control-label">주소</label>
 					<div class="col-sm-10">
-						<input class="form-control" id="inputAdd" placeholder="주소" name="address">
+						<input class="form-control" id="inputAdd" placeholder="주소" name="useraddress">
 					</div>
 				</div>				
 				<div class="form-group">
@@ -79,19 +79,30 @@
 				</div>				
 				<div class="form-group">
 					<div class="bottom col-sm-offset-2 col-sm-10" style="margin-top: 15px;margin-bottom: 15px;text-align: center;">
-						<button type="submit" class="btn btn-primary mt-2 mb-2">회원 가입</button>
-						<button type="submit" class="btn btn-danger mt-2 mb-2">취소</button>
+						<button type="submit" class="btn_click btn btn-primary mt-2 mb-2">회원 가입</button>
+						<a href="/main"><button type="submit" class="btn btn-danger mt-2 mb-2">취소</button></a>
 					</div>
 				</div>
 			</form>
 		</div><!-- class=row -->
 	</div><!-- class=container -->
        
+     	
         <!-- Footer-->
        <jsp:include page="/WEB-INF/views/include/footer.jsp" />
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+	<script src="js/scripts.js"></script>
+	
+	<script>
+		/*  $('.btn_click').click(function() {
+			if (emptyCheck()) {
+				$('#insert').submit();
+				consol.log('여기옴?');
+			}
+		});  */
+	</script>
+	
 </body>
 </html>

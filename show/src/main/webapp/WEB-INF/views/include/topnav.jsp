@@ -20,10 +20,10 @@ a:hover {
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="<c:url value='/'/>">홈</a></li>
-                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="list.bo">공지사항</a></li>
+                        <li class="nav-item"><a class="nav-link active" style="margin-left: 10px;" aria-current="page" href="<c:url value='/'/>">홈</a></li>
+                         <li class="nav-item"><a class="nav-link active" style="margin-left: 10px;" aria-current="page" href="list.bo">공지사항</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" style="margin-left: 10px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="list">전체</a></li>
                                 <li><hr class="dropdown-divider" /></li>
@@ -31,6 +31,7 @@ a:hover {
                                 <li><a class="dropdown-item" href="#!">악세사리</a></li>
                             </ul>
                         </li>
+                           <li class="nav-item"><a class="nav-link active" style="margin-left: 10px;" aria-current="page" href="map.mp">오시는 길</a></li>
                     </ul>
                     <form class="d-flex">
                         <button class="btn btn-outline-dark" type="submit">
