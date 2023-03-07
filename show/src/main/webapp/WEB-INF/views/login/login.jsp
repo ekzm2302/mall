@@ -20,6 +20,8 @@
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="css/styles.css" rel="stylesheet" />
  <script src="https://code.jquery.com/jquery-3.6.3.min.js" ></script> 
+ 
+
 </head>
 <body>
 	<!-- Navigation-->
@@ -35,7 +37,7 @@
 						<form action="" class="login-form">
 							<div class="form-group">
 								<input type="text" class="form-control rounded-left " id="id"
-						 			placeholder="ID" required>
+						 			placeholder="ID" required autocomplete="off">
 							</div>
 							<div class="form-group d-flex">
 								<input type="password" class="form-control rounded-left mt-2" id="pw"
