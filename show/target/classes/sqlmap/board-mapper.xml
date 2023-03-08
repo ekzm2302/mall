@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bo">
+
+<select id="info" resultType="board.BoardVO">
+select o.*, m.username
+from board o
+left join member m
+on o.user_no = m.user_no
+where o.board_no = #{id}
+</select>
+
+<select id="total" resultType="integer">
+	SELECT count(*) FROM board
+</select>
+
+
+<select id="plist" resultType="board.BoardVO">
+SELECT * FROM 
+		(SELECT a.*,rownum AS rnum FROM (
+		SELECT
+               b.board_no
+		     , b.board_title , b.user_no
+		     , b.BOARD_HITS
+		     , m.username
+		     , to_char(write_date,'YYYY-MM-DD') write_date
+		FROM board b left outer join member m
+        on b.user_no = m.user_no
+		ORDER BY board_no asc
+		) a  )b
+		WHERE rnum between #{beginList} and #{endList}
+		order by rnum desc
+</select>
+
+</mapper>

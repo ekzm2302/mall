@@ -4,8 +4,8 @@
 
 <!-- 회원가입 -->
 <insert id="insert">
-insert INTO member ( userid, userpw, username, useraddress, email,tel )
-VALUES ( #{userid} , #{userpw}, #{username} , #{useraddress} , #{email}, #{tel} )
+insert INTO member (user_no , userid, userpw, username, useraddress, email,tel )
+VALUES (#{user_no} , #{userid} , #{userpw}, #{username} , #{useraddress} , #{email}, #{tel} )
 </insert>
 <!-- 로그인조회 -->
 <select id='login' resultType='member.MemberVO'>

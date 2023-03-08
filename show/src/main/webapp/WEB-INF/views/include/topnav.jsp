@@ -62,7 +62,7 @@ a:hover {
         <header class="bg-dark py-3 mt-2">
             <div class="container px-4 px-lg-5 my-5">
                <div class="text-center text-white">
-                  <p class="title display-4 fw-bolder"> <a href=""> CJ Shop</a></p>
+                  <p class="title display-4 fw-bolder"> <a href="<c:url value='/'/>"> CJ Shop</a></p>
                     <p class="lead fw-normal text-white-50 mb-0">예쁜옷 예쁜신상 많은 집</p>
                 </div>
             </div>

@@ -15,7 +15,15 @@ public class MemberVO implements Serializable{
 	private String username;
 	private String useraddress;
 	private String email;
-	private int tel;
+	private int tel, user_no;
+	public int getUser_no() {
+		return user_no;
+	}
+
+	public void setUser_no(int user_no) {
+		this.user_no = user_no;
+	}
+
 	private String birth;
 	
 	public MemberVO() { /* 디폴트 생성자 */
