@@ -24,7 +24,7 @@
         <!-- Section-->
         <section class="py-5">
 	         <div style="text-align: right; margin-right: 350px;">
-	    <select name="sort" id="sort">
+	    <select style="margin-right: 13rem" name="sort" id="sort">
 	      <option value="recently" id="recently">전체</option>
 	      <option value="likes" id="likes">인기순</option>
 	      <option value="comments" id="comments">가격높음</option>
