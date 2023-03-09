@@ -11,7 +11,6 @@
         <meta name="author" content="" />
         <title>Shop</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,28 +26,22 @@
  <!-- Navigation-->
       <jsp:include page="/WEB-INF/views/include/topnav.jsp" />
         <!-- Section-->
-        <section class="ftco-section">
+        <section class="ftco-section py-5">
         <h2 class="text-center">&#127775; <span>New Item</span></h2>
-         <div class="mt-4" style=" display: flex; margin-bottom: -1rem; justify-content: center;">
-	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">전체</button>
-	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">상의</button>
-	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">하의</button>
-	  <button type="button" class="btn btn-outline-secondary " style="margin-left: 1rem; margin-right: 1rem;">악세사리</button>
-	  </div>
-          <div class="container">
-				<div class="row">
-					<div class="col-md-5 mt-5">
+	  <div class="container">
+	  <div class="row mb-5" style="align-items: center">
+					<div class="col-md-4 mt-5">
 						<div class="hero featured-carousel owl-carousel">
 							<div class="item">
 								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center" style="background-image: url(img/new1.jpg);">
+									<div class="img d-flex align-items-center justify-content-center" style="background-image: url(img/new2.jpg);">
 										
 									</div>
 								</div>
 							</div>
 							<div class="item">
 								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center" style="background-image: url(img/new2.jpg);">
+									<div class="img d-flex align-items-center justify-content-center" style="background-image: url(img/new1.jpg);">
 
 									</div>
 								</div>
@@ -56,14 +49,71 @@
 							<div class="item">
 								<div class="work">
 									<div class="img d-flex align-items-center justify-content-center" style="background-image: url(img/new3.jpg);">
-
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+			<!-- 상품 -->
+		<div class="col mb-5 mt-5">
+	   <div class="card ml-3" style="width: 100%; height: 70% !important;">
+	   <img class="card-img-top" src="img/new4.jpg" alt="..." />
+	   <div class="card-body p-4">
+          <div class="text-center">
+           <!-- Product name-->
+	        <h5 class="fw-bolder">Fancy Product</h5>
+	         <h5 class="fw-bolder">검정 후드티</h5>
+	         <!-- Product price-->
+	          ₩15,000원 ~ ₩20,000원
+	          </div>
+		</div>
+	  <!-- Product actions-->
+	  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+	    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니</a></div>
+	     </div>
+	   </div>
+          </div>
+          <!-- 상품 -->
+		<div class="col mb-5 mt-5">
+	   <div class="card" style="width: 100%; height: 70% !important;">
+	   <img class="card-img-top" src="img/new5.jpg" alt="..." />
+	   <div class="card-body p-4">
+          <div class="text-center">
+           <!-- Product name-->
+	        <h5 class="fw-bolder">Fancy Product</h5>
+	         <h5 class="fw-bolder">검정 후드티</h5>
+	         <!-- Product price-->
+	          ₩15,000원 ~ ₩20,000원
+	          </div>
+		</div>
+	  <!-- Product actions-->
+	  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+	    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니</a></div>
+	     </div>
+	   </div>
+          </div>
+          
+           <!-- 상품 -->
+		<div class="col mb-5 mt-5">
+	   <div class="card" style="width: 100%; height: 70% !important;">
+	   <img class="card-img-top" src="img/new6.jpg" alt="..." />
+	   <div class="card-body p-4">
+          <div class="text-center">
+           <!-- Product name-->
+	        <h5 class="fw-bolder">Fancy Product</h5>
+	         <h5 class="fw-bolder">검정 후드티</h5>
+	         <!-- Product price-->
+	          ₩15,000원 ~ ₩20,000원
+	          </div>
+		</div>
+	  <!-- Product actions-->
+	  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+	    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니</a></div>
+	     </div>
+	   </div>
+          </div>
+          </div>
 				</div>
-			</div>
         </section>
         <!-- Footer-->
        <jsp:include page="/WEB-INF/views/include/footer.jsp" />
